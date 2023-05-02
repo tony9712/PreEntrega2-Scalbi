@@ -1,0 +1,337 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* estilos generales*/
+
+h2{
+    font-family: 'Roboto', sans-serif; 
+    color: rgb(3, 3, 3);
+}
+li{
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(2, 2, 2);
+    font-size: 25px; 
+}
+ul{
+    list-style: none;
+}
+table{
+    background-color: aliceblue;
+}
+
+/* header */
+
+.nav-titulo{
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    gap: 10px;
+    font-size: 20px;
+}
+.borde{
+    border-left: 1px black solid
+}
+.nav-logo{
+    margin-top: 3px;
+}
+.header-color{
+    background-color: rgb(116, 178, 191);
+}
+.nav-post{
+    background-color: white;
+}
+
+/* footer */
+
+.foot{
+    display: block;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: white;
+    border-top: 1px black solid;
+}
+footer p{
+    font-size: 12px;
+    margin-right: 10px;
+}
+footer ul{
+    margin-left: 10px;
+}
+
+/* index */
+
+.backgroundcolor{
+    background-color: rgb(116, 178, 191);
+}
+.intro__presentacion{
+    font-size: 28px;
+    border-radius: 5px;
+    text-align: center;
+}
+.bienvenido{
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 40px;
+    background-color: rgb(235, 145, 137);
+}
+.titulo{
+    font-size: 50px;
+    font-family: 'Anton', sans-serif;
+}
+.fondo{
+    background-image: url(../imagenes/fondo\ nuevo.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.fondo h1{
+    margin-top: 40px;
+}
+.fondo-fotos{
+    background-image: url(../imagenes/lindo\ fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+    background-attachment: fixed;
+}
+.fondo-fotos-texto{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+.carrosa-tamaño{
+    height: 322px;
+    width: 500px;
+}
+.carrosa-centrar{
+    display: flex;
+    justify-content: center;
+}
+
+/* matematicas */
+
+.fotoperfil{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+}
+.mate__titulo{
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-left: 400px;
+}
+.mate__subtitulo{
+    text-align: center; 
+    margin-left: 400px;
+}
+.mate{
+    background-image: url(../imagenes/fondo\ matematicas.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px;
+}
+.mate-textos{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+.carta{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.card{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+.carta-boton{
+    background-color: rgb(246, 171, 152);
+    width: 140px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+.card-body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.carta-nombre{
+    font-size: 30px;
+}
+.carta-texto{
+    font-size: 20px;
+}
+
+/* perfil */
+
+.portada{
+    background-image: url(../imagenes/fondo-mat.jpg);
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 20px;
+}
+.portada__fotoperfil{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+.portada__nombre{
+    background-color: aliceblue;
+    margin: 10px;
+    border-radius: 5px;
+}
+.fotos{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;  
+}
+.fotos__clase{
+    margin: 10px;
+    height: 200px;
+    width: 300px;
+}
+.padre__info__descripcion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info__descripcion{
+    background-color: aliceblue;
+    height: 230px;
+}
+.info__perfil{
+    display: grid;
+    grid-template-columns: 65% 35%;
+}
+.info__perfil iframe{
+    border-radius: 20px;
+}
+.info__perfil p{
+    border-radius: 5px;
+}
+.info__redes{
+    background-color: aliceblue;
+    text-align: center;
+    margin-top: 43px;
+    border-radius: 5px;
+}
+.info{
+    display: flex;
+    gap: 80px;
+    margin-left: 280px;
+    margin-bottom: 30px;
+}
+
+/* quienes somos*/
+
+.foto{
+    width: 250px;
+    height: 200px;
+}
+.alineado{
+    align-content: center;
+}
+.historia{
+    margin: 20px;
+    display: grid;
+    align-items: center;
+    align-content: center;
+    grid-template-columns: 40% 30% 30%;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.quienes{
+    background-image: url(../imagenes/1771974.jpg);
+    background-attachment: fixed;
+    text-align: center;
+}
+.texto{
+    background-color: aliceblue;
+    margin-top: 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.año{
+    font-size: 60px;
+}
+/* postulate */
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 500px; 
+    
+}
+.postulate-main{
+    padding: 100px;
+    background-image: url(../imagenes/fondo\ psotulate.jpg.png);
+    background-size: cover;
+}
+.certificado-postulate{
+    padding-bottom: 20px;
+}
+.titulo-postulate{
+    padding-bottom: 30px;
+    width: 600px;
+    font-family: 'Roboto', sans-serif; 
+}
+
+/* mediaquery*/
+
+@media (max-width:576px){
+    footer{
+        display: grid;
+        justify-items: center;
+        grid-template-rows: 1fr 30px 1fr 60px;
+        grid-gap: 5px;
+    }
+    iframe{
+        margin-top: 10px;
+        grid-row: 1;
+    }
+    .wtsig{
+        grid-row: 2;
+    }
+    ul{
+        grid-row: 3;
+    }
+    p{
+        grid-row: 4;
+    }
+    .intro__presentacion{
+        display: none;
+    }
+    .carousel {     
+        width: 450px; 
+    }  
+    .carousel-item img {     
+        max-height: 380px;     border: 1px solid black;
+    }
+}
