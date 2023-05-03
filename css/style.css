@@ -92,7 +92,7 @@ footer ul{
     font-family: 'Anton', sans-serif;
 }
 .fondo{
-    background-image: url(../imagenes/fondo\ nuevo.jpg);
+    background-image: url(../imagenes/fondo-nuevo.jpg);
     min-height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -146,7 +146,7 @@ footer ul{
     margin-left: 400px;
 }
 .mate{
-    background-image: url(../imagenes/fondo\ matematicas.png);
+    background-image: url(../imagenes/fondo-matematicas.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 200px;
