@@ -316,22 +316,62 @@ footer ul{
         margin-top: 10px;
         grid-row: 1;
     }
+
     .wtsig{
         grid-row: 2;
     }
+
     ul{
         grid-row: 3;
     }
+
     p{
         grid-row: 4;
     }
+
     .intro__presentacion{
         display: none;
     }
+
     .carousel {     
         width: 450px; 
     }  
+
     .carousel-item img {     
         max-height: 380px;     border: 1px solid black;
     }
+
+    .descripcion{
+        display: none;
+    }
+
+    .tamano-carrusel{
+        width: 600px;
+    }
+
+    .mate__subtitulo{
+        display: none;
+    }
+
+    .mate{
+        padding: 100px;
+    }
+
+    .mate__titulo{
+        font-size: 30px;
+        margin: 0px;
+        margin-left: 220px;
+        margin-top: 20px;
+    }
+
+    .form-mobile{
+        width: 400px;
+    }
+
+    .postulate-main{
+        background-image: url(../imagenes/fondo-postulate.jpg);
+        padding-top: 260px;
+    }
+    
+
 }
