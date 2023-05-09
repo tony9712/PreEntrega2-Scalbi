@@ -429,5 +429,48 @@ footer ul{
         padding-top: 260px;
     }
     
+    .carrusel-perfil{
+        display: block;
+    }
+
+    .fotos{
+        display: none;
+    }
+
+    .grilla-perfil-media{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 30% 40% 10% 10%;
+    }
+
+    .carrusel-perfil{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .iframe-perfil-media{
+        width: 300px;
+        height: 300px;
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .padre__info__descripcion{
+        width: 400px;
+        height: 250px;
+    }
+
+    .info__descripcion{
+        font-size: 20px;
+        grid-column: 1;
+        grid-row: 2;
+        padding-top: 50px;
+    }
+     .info{
+        grid-column: 1;
+        grid-row: 4;
+        margin: 0;
+        padding-top: 30px;
+     }
 
 }
