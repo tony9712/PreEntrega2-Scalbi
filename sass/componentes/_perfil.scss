@@ -1,0 +1,83 @@
+/* perfil */
+
+main{
+    .portada{
+        background-image: url(../imagenes/fondo-mat.jpg);
+        display: flex;
+        justify-content: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        margin-top: 20px;
+
+        .portada__nombre{
+            background-color: $fondo-claro;
+            margin: 10px;
+            border-radius: 5px
+        }
+
+        .portada__fotoperfil{
+            width: 200px;
+            height: 200px;
+            border-radius: 100px
+        }
+    }
+}
+
+section{
+    article{
+        .carrusel-perfil{
+            display: none
+        }
+    }
+}
+
+.fotos{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+
+    .fotos__clase{
+        margin: 10px;
+        height: 200px;
+        width: 300px
+    }
+}
+
+.info__perfil{
+    display: grid;
+    grid-template-columns: 65% 35%;
+
+    p{
+        border-radius: 5px
+    
+    }
+
+    .padre__info__descripcion{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .info__descripcion{
+            background-color: $fondo-claro;
+            height: 230px;
+        }
+    }
+
+    .iframe-perfil-media{
+        border-radius: 20px
+    }
+}
+
+.info{
+    display: flex;
+    gap: 80px;
+    margin-left: 280px;
+    margin-bottom: 30px;
+
+    .info__redes{
+        background-color: $fondo-claro;
+        text-align: center;
+        margin-top: 43px;
+        border-radius: 5px;
+    }
+}

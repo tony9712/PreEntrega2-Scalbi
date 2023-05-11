@@ -1,0 +1,65 @@
+/* matematicas */
+
+main{
+    .mate{
+        background-image: url(../imagenes/fondo-matematicas.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 200px;
+        .mate-textos{
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 50px;
+            
+            .mate__titulo{
+                font-size: 60px;
+                text-align: center;
+                margin-bottom: 25px;
+                margin-left: 400px;
+            }
+            
+            .mate__subtitulo{
+                text-align: center;
+                margin-left: 400px;
+            }
+        }
+    }
+    
+    .carta{
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+
+        .card{
+            display: flex;
+            align-items: center;
+            text-align: center;
+            padding: 10px;
+
+            .card-body{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+
+                .carta-nombre{
+                    font-size: 30px  
+                }
+                
+                .carta-texto{
+                    font-size: 20px
+                }
+
+                .carta-boton{
+                    background-color: rgb(246, 171, 152);
+                    width: 140px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }   
+    
+}

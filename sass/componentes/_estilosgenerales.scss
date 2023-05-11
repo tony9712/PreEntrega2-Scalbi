@@ -1,0 +1,36 @@
+/*reset*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* estilos generales*/
+h2{
+    font-family: $fuente-robot;
+    color: rgb(3, 3, 3);
+}
+
+li{
+    p{
+        font-family: $fuente-robot;
+    }
+} 
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+p{
+    color: rgb(2, 2, 2);
+    font-size: 25px;
+}
+
+ul{
+    list-style: none;
+}
+
+table{
+    background-color: $fuente-robot;
+}

@@ -1,0 +1,21 @@
+/* footer */
+
+.foot{
+    display: block;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: white;
+    border-top: 1px black solid;
+    p{
+        font-size: 12px;
+        margin-right: 10px;
+    }
+    ul{
+        margin-left: 10px;
+    }
+}

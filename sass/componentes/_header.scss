@@ -1,0 +1,27 @@
+/* header*/
+
+header{
+    .nav-titulo{
+        display: flex;
+        flex-direction: row;
+        width: 200px;
+        gap: 10px;
+        font-size: 20px;
+    }
+    
+    .borde{
+        border-left: 1px black solid;
+    }
+    
+    .nav-logo{
+        margin-top: 3px;
+    }
+    
+    .header-color{
+        background-color: $color-primario;
+    }
+    
+    .nav-post{
+        background-color: white;
+    }
+}

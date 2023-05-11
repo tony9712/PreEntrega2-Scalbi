@@ -1,0 +1,69 @@
+/* index */
+
+main{
+    .fondo{
+        background-image: url(../imagenes/fondo-nuevo.jpg);
+        min-height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        h1{
+            margin-top: 40px;
+        }
+        .titulo{
+            font-size: 50px;
+            font-family: 'Anton', sans-serif;
+        }
+    }
+    .color__bienvenido{
+        background-color: $color-primario;
+    }
+    
+    .intro__presentacion{
+        font-size: 28px;
+        border-radius: 5px;
+        text-align: center;
+    }
+    
+    .bienvenido{
+        border-radius: 5px;
+        padding: 5px;
+        font-size: 40px;
+        background-color: rgb(235, 145, 137);
+    }
+}
+
+.fondo-fotos{
+    background-image: url(../imagenes/lindo-fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+    background-attachment: fixed;
+
+    .fondo-fotos-texto{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 50px;
+    }
+    .carrosa-tamano{
+        height: 322px;
+        width: 500px;
+    }
+    
+    .carrosa-centrar{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .fotoperfil{
+        width: 150px;
+        height: 150px;
+        border-radius: 100px
+    }
+}
