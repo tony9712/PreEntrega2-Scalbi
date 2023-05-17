@@ -1,5 +1,5 @@
 @charset "UTF-8";
-main .carta .card .card-body .carta-boton, main .carta, .fondo-fotos .carrosa-centrar, main .fondo {
+.info__perfil .padre__info__descripcion, main .portada, main .carta .card .card-body .carta-boton, main .carta, .fondo-fotos .carrosa-centrar, main .fondo {
   display: flex;
   justify-content: center;
 }
@@ -192,8 +192,6 @@ main .carta .card .card-body .carta-boton {
 /* perfil */
 main .portada {
   background-image: url(../imagenes/fondo-mat.jpg);
-  display: flex;
-  justify-content: center;
   padding-top: 40px;
   padding-bottom: 40px;
   margin-top: 20px;
@@ -232,8 +230,6 @@ section .carrusel-perfil {
   border-radius: 5px;
 }
 .info__perfil .padre__info__descripcion {
-  display: flex;
-  justify-content: center;
   align-items: center;
 }
 .info__perfil .padre__info__descripcion .info__descripcion {
@@ -415,6 +411,10 @@ section .carrusel-perfil {
     padding-left: 0px;
   }
   /*perfil*/
+  .fondo-mobile-perfil {
+    background-image: url(../imagenes/fondo-mobile-perfil.avif);
+    background-attachment: fixed;
+  }
   .grilla-perfil-media {
     display: flex;
     flex-direction: column;
@@ -424,6 +424,7 @@ section .carrusel-perfil {
   }
   .grilla-perfil-media .carrusel-perfil {
     display: block;
+    padding-top: 20px;
   }
   .grilla-perfil-media .carrusel-perfil .carousel-item {
     width: 300px;
@@ -432,24 +433,27 @@ section .carrusel-perfil {
   .grilla-perfil-media .info__perfil {
     display: flex;
     gap: 0px;
+    padding-top: 20px;
   }
   .grilla-perfil-media .info__perfil .iframe-perfil-media {
     width: 200px;
-    height: 200px;
+    height: 248px;
     padding-left: 0px;
   }
   .grilla-perfil-media .info__perfil .padre__info__descripcion {
-    width: 200px;
-    height: 200px;
+    border: 1px solid black;
+    background-color: aliceblue;
   }
   .grilla-perfil-media .info__perfil .padre__info__descripcion .info__descripcion {
-    font-size: 15px;
+    font-size: 16px;
+    margin-bottom: 5px;
   }
   .grilla-perfil-media .info {
     display: flex;
     margin-left: 90px;
   }
   .grilla-perfil-media .info .mobile-imagen-redes {
+    background-color: aliceblue;
     display: block;
     margin-top: 20px;
     margin-left: 10px;

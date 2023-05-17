@@ -3,8 +3,7 @@
 main{
     .portada{
         background-image: url(../imagenes/fondo-mat.jpg);
-        display: flex;
-        justify-content: center;
+        @extend %flex-centrado;
         padding-top: 40px;
         padding-bottom: 40px;
         margin-top: 20px;
@@ -50,8 +49,7 @@ section{
     }
 
     .padre__info__descripcion{
-        display: flex;
-        justify-content: center;
+        @extend %flex-centrado;
         align-items: center;
 
         .info__descripcion{
