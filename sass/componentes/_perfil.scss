@@ -12,23 +12,21 @@ main{
         .portada__nombre{
             background-color: $fondo-claro;
             margin: 10px;
-            border-radius: 5px
+            border-radius: 5px;
         }
 
         .portada__fotoperfil{
             width: 200px;
             height: 200px;
-            border-radius: 100px
+            border-radius: 100px;
         }
     }
 }
 
 section{
-    article{
         .carrusel-perfil{
-            display: none
+            display: none;
         }
-    }
 }
 
 .fotos{
@@ -39,7 +37,7 @@ section{
     .fotos__clase{
         margin: 10px;
         height: 200px;
-        width: 300px
+        width: 300px;
     }
 }
 
@@ -48,8 +46,7 @@ section{
     grid-template-columns: 65% 35%;
 
     p{
-        border-radius: 5px
-    
+        border-radius: 5px;
     }
 
     .padre__info__descripcion{
@@ -64,7 +61,10 @@ section{
     }
 
     .iframe-perfil-media{
-        border-radius: 20px
+        border-radius: 20px;
+        height: 400px;
+        width: 600px;
+        padding-left: 200px;
     }
 }
 
@@ -73,6 +73,7 @@ section{
     gap: 80px;
     margin-left: 280px;
     margin-bottom: 30px;
+    
 
     .info__redes{
         background-color: $fondo-claro;

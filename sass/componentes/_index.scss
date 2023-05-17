@@ -3,9 +3,9 @@
 main{
     .fondo{
         background-image: url(../imagenes/fondo-nuevo.jpg);
-        min-height: 100vh;
-        background-size: cover;
-        background-repeat: no-repeat;
+        height: 600px;
+        background-size: map-get($backgr, b-z);
+        background-repeat: map-get($backgr, b-r);
         text-align: center;
         display: flex;
         justify-content: center;
@@ -38,8 +38,8 @@ main{
 
 .fondo-fotos{
     background-image: url(../imagenes/lindo-fondo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: map-get($backgr , b-r);
+    background-size: map-get($backgr, b-z);
     padding: 100px;
     background-attachment: fixed;
 
@@ -64,6 +64,6 @@ main{
     .fotoperfil{
         width: 150px;
         height: 150px;
-        border-radius: 100px
+        border-radius: 100px;
     }
 }

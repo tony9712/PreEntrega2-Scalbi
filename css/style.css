@@ -64,7 +64,7 @@ footer {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  background-color: white;
+  background-color: rgb(116, 178, 191);
   border-top: 1px black solid;
 }
 footer p {
@@ -78,7 +78,7 @@ footer ul {
 /* index */
 main .fondo {
   background-image: url(../imagenes/fondo-nuevo.jpg);
-  min-height: 100vh;
+  height: 600px;
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
@@ -143,6 +143,9 @@ main .mate {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 200px;
+  max-width: 100vw;
+  max-height: 100vh;
+  background-position: center;
 }
 main .mate .mate-textos {
   display: flex;
@@ -163,6 +166,7 @@ main .carta {
   display: flex;
   justify-content: center;
   padding: 20px;
+  background-color: rgb(116, 178, 191);
 }
 main .carta .card {
   display: flex;
@@ -211,7 +215,7 @@ main .portada .portada__fotoperfil {
   border-radius: 100px;
 }
 
-section article .carrusel-perfil {
+section .carrusel-perfil {
   display: none;
 }
 
@@ -244,6 +248,9 @@ section article .carrusel-perfil {
 }
 .info__perfil .iframe-perfil-media {
   border-radius: 20px;
+  height: 400px;
+  width: 600px;
+  padding-left: 200px;
 }
 
 .info {
@@ -309,6 +316,109 @@ section article .carrusel-perfil {
 }
 .quienes .historia .año {
   font-size: 60px;
+}
+
+@media only screen and (max-width: 576px) {
+  /* footer*/
+  footer {
+    display: grid;
+    justify-items: center;
+    grid-template-rows: 1fr 30px 1fr 60px;
+    grid-gap: 5px;
+  }
+  footer iframe {
+    margin-top: 10px;
+    grid-row: 1;
+  }
+  footer .wtsig {
+    grid-row: 2;
+  }
+  footer ul {
+    grid-row: 3;
+  }
+  footer p {
+    grid-row: 4;
+  }
+  /*header*/
+  header .borde {
+    border: 0px;
+  }
+  /*index*/
+  .intro__presentacion {
+    display: none;
+  }
+  .fondo {
+    max-height: 200px;
+    background-position: center;
+  }
+  .fondo h1 {
+    font-size: 20px;
+  }
+  .carousel {
+    width: 450px;
+  }
+  .carousel-item img {
+    max-height: 380px;
+    border: 1px solid black;
+  }
+  .descripcion {
+    display: none;
+  }
+  .tamano-carrusel {
+    width: 600px;
+  }
+  /*matematicas*/
+  main .mate {
+    padding: 50px;
+  }
+  main .mate .mate-textos {
+    padding-bottom: 25px;
+  }
+  main .mate .mate-textos .mate__titulo {
+    font-size: 30px;
+    margin-left: 120px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  main .mate .mate-textos .mate__subtitulo {
+    display: none;
+  }
+  .titulo-postulate {
+    width: 100%;
+    font-size: 24px;
+    text-align: center;
+    max-width: 100vw;
+  }
+  /*postulate*/
+  .form {
+    width: 100%;
+    max-width: 100vw;
+  }
+  .postulate-main {
+    background-image: url(../imagenes/fondo-postulate.jpg);
+    max-width: 100vw;
+    margin-right: 0px;
+    padding-left: 0px;
+  }
+  /*perfil*/
+  .grilla-perfil-media {
+    display: flex;
+    flex-direction: column;
+  }
+  .grilla-perfil-media .fotos {
+    display: none;
+  }
+  .grilla-perfil-media .carrusel-perfil {
+    display: block;
+  }
+  .grilla-perfil-media .info__perfil .iframe-perfil-media {
+    width: 50px;
+    height: 100px;
+    padding-left: 0px;
+  }
+  .grilla-perfil-media .info__perfil .padre__info__descripcion .info__descripcion {
+    font-size: 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,131 @@
+@media only screen and (max-width: 576px) {
+    
+    /* footer*/
+
+    footer {
+      display: grid;
+      justify-items: center;
+      grid-template-rows: 1fr 30px 1fr 60px;
+      grid-gap: 5px;
+      iframe {
+        margin-top: 10px;
+        grid-row: 1;
+      }
+
+      .wtsig {
+        grid-row: 2;
+      }
+
+      ul {
+        grid-row: 3;
+      }
+
+      p {
+        grid-row: 4;
+      }
+    }
+
+    /*header*/
+
+    header{
+
+        .borde{
+            border: 0px;
+        }
+    }
+
+    /*index*/
+
+    .intro__presentacion {
+      display: none;
+    }
+
+    .fondo{
+        max-height: 200px;
+        background-position: center;
+        h1{
+          font-size: 20px;
+        }
+    }
+
+    .carousel {
+      width: 450px;
+      &-item img {
+        max-height: 380px;
+        border: 1px solid black;
+      }
+    }
+
+    .descripcion {
+      display: none;
+    }
+
+    .tamano-carrusel {
+      width: 600px;
+    }
+
+    /*matematicas*/
+
+    main .mate {
+        padding: 50px;
+      }
+      main .mate .mate-textos {
+        padding-bottom: 25px;
+      }
+      main .mate .mate-textos .mate__titulo {
+        font-size: 30px;
+        margin-left: 120px;
+        margin-top: 20px;
+        text-align: center;
+      }
+      main .mate .mate-textos .mate__subtitulo {
+        display: none;
+      }
+
+      .titulo-postulate {
+        width: 100%;
+        font-size: 24px;
+        text-align: center;
+        max-width: 100vw;
+      }
+
+      /*postulate*/
+
+      .form {
+        width: 100%;
+        max-width: 100vw;
+      }
+
+      .postulate-main {
+        background-image: url(../imagenes/fondo-postulate.jpg);
+        max-width: 100vw;
+        margin-right: 0px;
+        padding-left: 0px;
+      }
+
+      /*perfil*/
+      
+      .grilla-perfil-media{
+        display: flex;
+        flex-direction: column;
+        .fotos{
+            display: none;
+        }
+        .carrusel-perfil{
+            display: block;
+
+        }
+        .info__perfil{
+            .iframe-perfil-media{
+                width: 50px;
+                height: 100px;
+                padding-left: 0px;
+            }
+            .padre__info__descripcion{
+                .info__descripcion{
+                    font-size: 10px;
+                }
+            }
+        }
+      }
+  }
