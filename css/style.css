@@ -1,4 +1,15 @@
 @charset "UTF-8";
+main .carta .card .card-body .carta-boton, main .carta, .fondo-fotos .carrosa-centrar, main .fondo {
+  display: flex;
+  justify-content: center;
+}
+
+.quienes .quienes-titulo, main .carta .card .card-body, .fondo-fotos .fondo-fotos-texto {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
 /*reset*/
 * {
   margin: 0;
@@ -64,7 +75,6 @@ footer {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  background-color: rgb(116, 178, 191);
   border-top: 1px black solid;
 }
 footer p {
@@ -82,8 +92,6 @@ main .fondo {
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
-  display: flex;
-  justify-content: center;
   align-items: flex-start;
 }
 main .fondo h1 {
@@ -116,9 +124,6 @@ main .bienvenido {
   background-attachment: fixed;
 }
 .fondo-fotos .fondo-fotos-texto {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   align-items: center;
   gap: 10px;
   margin-bottom: 50px;
@@ -126,10 +131,6 @@ main .bienvenido {
 .fondo-fotos .carrosa-tamano {
   height: 322px;
   width: 500px;
-}
-.fondo-fotos .carrosa-centrar {
-  display: flex;
-  justify-content: center;
 }
 .fondo-fotos .fotoperfil {
   width: 150px;
@@ -163,8 +164,6 @@ main .mate .mate-textos .mate__subtitulo {
   margin-left: 400px;
 }
 main .carta {
-  display: flex;
-  justify-content: center;
   padding: 20px;
   background-color: rgb(116, 178, 191);
 }
@@ -175,9 +174,6 @@ main .carta .card {
   padding: 10px;
 }
 main .carta .card .card-body {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   align-items: center;
 }
 main .carta .card .card-body .carta-nombre {
@@ -190,8 +186,6 @@ main .carta .card .card-body .carta-boton {
   background-color: rgb(246, 171, 152);
   width: 140px;
   height: 50px;
-  display: flex;
-  justify-content: center;
   border-radius: 10px;
 }
 
@@ -265,6 +259,9 @@ section .carrusel-perfil {
   margin-top: 43px;
   border-radius: 5px;
 }
+.info .mobile-imagen-redes {
+  display: none;
+}
 
 /* postulate */
 .postulate-main {
@@ -288,9 +285,17 @@ section .carrusel-perfil {
 
 /* quienes somos*/
 .quienes {
-  background-image: url(../imagenes/1771974.jpg);
+  background-image: url(../imagenes/fondo-nuestra.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   text-align: center;
+}
+.quienes .quienes-titulo {
+  background-color: rgb(116, 178, 191);
+}
+.quienes .quienes-titulo .texto-mobile-titulo {
+  display: none;
 }
 .quienes .texto {
   background-color: aliceblue;
@@ -306,6 +311,15 @@ section .carrusel-perfil {
   align-content: center;
   grid-template-columns: 40% 30% 30%;
   grid-template-rows: 1fr 1fr 1fr;
+}
+.quienes .historia .texto-mobile-2019 {
+  display: none;
+}
+.quienes .historia .texto-mobile-2021 {
+  display: none;
+}
+.quienes .historia .texto-mobile-2023 {
+  display: none;
 }
 .quienes .historia .alineado {
   align-content: center;
@@ -411,13 +425,65 @@ section .carrusel-perfil {
   .grilla-perfil-media .carrusel-perfil {
     display: block;
   }
+  .grilla-perfil-media .carrusel-perfil .carousel-item {
+    width: 300px;
+    height: 300px;
+  }
+  .grilla-perfil-media .info__perfil {
+    display: flex;
+    gap: 0px;
+  }
   .grilla-perfil-media .info__perfil .iframe-perfil-media {
-    width: 50px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     padding-left: 0px;
   }
+  .grilla-perfil-media .info__perfil .padre__info__descripcion {
+    width: 200px;
+    height: 200px;
+  }
   .grilla-perfil-media .info__perfil .padre__info__descripcion .info__descripcion {
-    font-size: 10px;
+    font-size: 15px;
+  }
+  .grilla-perfil-media .info {
+    display: flex;
+    margin-left: 90px;
+  }
+  .grilla-perfil-media .info .mobile-imagen-redes {
+    display: block;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 45px;
+    height: 45px;
+  }
+  .grilla-perfil-media .info .info__redes {
+    display: none;
+  }
+  /*nuestra historia*/
+  .quienes .quienes-titulo .texto.mobile-titulo {
+    display: block;
+  }
+  .quienes .historia {
+    display: none;
+  }
+  .quienes .mobile__historia {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  .quienes .mobile__historia .año-mobile {
+    font-size: 60px;
+    background-color: rgb(116, 178, 191);
+    border-radius: 100%;
+  }
+  .quienes .mobile__historia .foto-mobile {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+  }
+  .quienes .mobile__historia .texto-mobile {
+    border: 2px solid black;
+    border-radius: 10px;
   }
 }
 

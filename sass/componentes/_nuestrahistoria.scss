@@ -1,9 +1,20 @@
 /* quienes somos*/
 
 .quienes{
-    background-image: url(../imagenes/1771974.jpg);
+    background-image: url(../imagenes/fondo-nuestra.jpg);
+    background-size: map-get($backgr , b-z );
+    background-repeat: map-get($backgr, b-r );
     background-attachment: fixed;
     text-align: center;
+
+    .quienes-titulo{
+        background-color: $color-primario;
+        @extend %flex-centrado-colum;
+
+        .texto-mobile-titulo{
+            display: none;
+        }
+    }
 
     .texto{
         background-color: $fondo-claro;
@@ -13,24 +24,36 @@
         border-radius: 5px;
         }
 
-        .historia{
-            margin: 20px;
-            display: grid;
-            align-items: center;
+    .historia{
+        margin: 20px;
+        display: grid;
+        align-items: center;
+        align-content: center;
+        grid-template-columns: 40% 30% 30%;
+        grid-template-rows: 1fr 1fr 1fr;
+
+        .texto-mobile-2019{
+            display: none;
+        }
+
+        .texto-mobile-2021{
+            display: none;
+        }
+
+        .texto-mobile-2023{
+            display: none;
+        }
+
+        .alineado{
             align-content: center;
-            grid-template-columns: 40% 30% 30%;
-            grid-template-rows: 1fr 1fr 1fr;
 
-            .alineado{
-                align-content: center;
-
-                .foto{
-                    width: 250px;
-                    height: 200px;
-                    }
-                }
-            .año{
-                font-size: 60px;
+            .foto{
+                width: 250px;
+                height: 200px;
                 }
             }
+        .año{
+            font-size: 60px;
+            }
     }
+}
