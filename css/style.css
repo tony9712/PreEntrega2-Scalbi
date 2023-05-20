@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .info__perfil .padre__info__descripcion, main .portada, main .carta .card .card-body .carta-boton, main .carta, .fondo-fotos .carrosa-centrar, main .fondo {
   display: flex;
   justify-content: center;
@@ -296,39 +295,30 @@ section .carrusel-perfil {
 .quienes .quienes-titulo .texto-mobile-titulo {
   display: none;
 }
-.quienes .texto {
+.quienes .historia {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+}
+.quienes .historia .texto {
   background-color: aliceblue;
   margin-top: 10px;
   display: inline-block;
   margin-bottom: 10px;
   border-radius: 5px;
-}
-.quienes .historia {
-  margin: 20px;
-  display: grid;
-  align-items: center;
-  align-content: center;
-  grid-template-columns: 40% 30% 30%;
-  grid-template-rows: 1fr 1fr 1fr;
-}
-.quienes .historia .texto-mobile-2019 {
-  display: none;
-}
-.quienes .historia .texto-mobile-2021 {
-  display: none;
-}
-.quienes .historia .texto-mobile-2023 {
-  display: none;
+  width: 550px;
+  height: 200px;
 }
 .quienes .historia .alineado {
   align-content: center;
 }
 .quienes .historia .alineado .foto {
-  width: 250px;
-  height: 200px;
+  width: 550px;
+  height: 400px;
 }
-.quienes .historia .año {
-  font-size: 60px;
+.quienes .historia .year {
+  font-size: 100px;
 }
 
 @media only screen and (max-width: 576px) {
@@ -396,26 +386,27 @@ section .carrusel-perfil {
   main .mate .mate-textos .mate__subtitulo {
     display: none;
   }
-  .titulo-postulate {
-    width: 100%;
-    font-size: 24px;
-    text-align: center;
-    max-width: 100vw;
-  }
   /*postulate*/
   .form {
-    width: 100%;
     max-width: 100vw;
   }
   .postulate-main {
-    background-image: url(../imagenes/fondo-postulate.jpg);
-    max-width: 100vw;
-    margin-right: 0px;
+    background-image: url(../imagenes/fondo-mobile-postulate.jpg.png);
     padding-left: 0px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  .postulate-main .titulo-postulate {
+    background-color: aliceblue;
+    padding: 0px;
+    max-width: 100%;
   }
   /*perfil*/
   .fondo-mobile-perfil {
     background-image: url(../imagenes/fondo-mobile-perfil.avif);
+    background-attachment: fixed;
+  }
+  .fondo-mobile-perfil .perfil__mobile__portada {
     background-attachment: fixed;
   }
   .grilla-perfil-media {
@@ -435,21 +426,26 @@ section .carrusel-perfil {
   }
   .grilla-perfil-media .info__perfil {
     display: flex;
-    gap: 0px;
-    padding-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
   }
   .grilla-perfil-media .info__perfil .iframe-perfil-media {
-    width: 200px;
+    width: 300px;
     height: 248px;
     padding-left: 0px;
   }
   .grilla-perfil-media .info__perfil .padre__info__descripcion {
     border: 1px solid black;
     background-color: aliceblue;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
   }
   .grilla-perfil-media .info__perfil .padre__info__descripcion .info__descripcion {
     font-size: 16px;
     margin-bottom: 5px;
+    word-wrap: break-word;
   }
   .grilla-perfil-media .info {
     display: flex;
@@ -478,7 +474,7 @@ section .carrusel-perfil {
     display: flex;
     flex-direction: column;
   }
-  .quienes .mobile__historia .año-mobile {
+  .quienes .mobile__historia .year-mobile {
     font-size: 60px;
     background-color: rgb(116, 178, 191);
     border-radius: 100%;

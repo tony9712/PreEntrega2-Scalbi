@@ -20,44 +20,33 @@
         }
     }
 
-    .texto{
-        background-color: $fondo-claro;
-        margin-top: 10px;
-        display: inline-block;
-        margin-bottom: 10px;
-        border-radius: 5px;
-        }
-
     .historia{
         margin: 20px;
-        display: grid;
-        align-items: center;
-        align-content: center;
-        grid-template-columns: 40% 30% 30%;
-        grid-template-rows: 1fr 1fr 1fr;
+        display: flex;
+        flex-direction: column;
+        gap: 200px;
+        
 
-        .texto-mobile-2019{
-            display: none;
-        }
-
-        .texto-mobile-2021{
-            display: none;
-        }
-
-        .texto-mobile-2023{
-            display: none;
-        }
+        .texto{
+            background-color: $fondo-claro;
+            margin-top: 10px;
+            display: inline-block;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            width: 550px;
+            height: 200px;
+            }
 
         .alineado{
             align-content: center;
 
             .foto{
-                width: 250px;
-                height: 200px;
+                width: 550px;
+                height: 400px;
                 }
             }
-        .año{
-            font-size: 60px;
+        .year{
+            font-size: 100px;
             }
     }
 }
