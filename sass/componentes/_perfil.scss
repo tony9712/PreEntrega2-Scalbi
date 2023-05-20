@@ -1,6 +1,7 @@
 /* perfil */
 
 main{
+    background-image: url(../imagenes/fondo-mobile-perfil.avif);
     .portada{
         background-image: url(../imagenes/fondo-mat.jpg);
         @extend %flex-centrado;
@@ -67,20 +68,13 @@ section{
 }
 
 .info{
-    display: flex;
-    gap: 80px;
-    margin-left: 280px;
-    margin-bottom: 30px;
-    
-
-    .info__redes{
-        background-color: $fondo-claro;
-        text-align: center;
-        margin-top: 43px;
-        border-radius: 5px;
-    }
+    @extend %flex-centrado;
+    gap: 200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 
     .mobile-imagen-redes{
-        display: none;
+        width: 45px;
+        height: 45px;
     }
 }

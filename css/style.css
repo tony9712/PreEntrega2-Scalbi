@@ -1,4 +1,4 @@
-.info__perfil .padre__info__descripcion, main .portada, main .carta .card .card-body .carta-boton, main .carta, .fondo-fotos .carrosa-centrar, main .fondo {
+.info, .info__perfil .padre__info__descripcion, main .portada, main .carta .card .card-body .carta-boton, main .carta, .fondo-fotos .carrosa-centrar, main .fondo {
   display: flex;
   justify-content: center;
 }
@@ -189,6 +189,9 @@ main .carta .card .card-body .carta-boton {
 }
 
 /* perfil */
+main {
+  background-image: url(../imagenes/fondo-mobile-perfil.avif);
+}
 main .portada {
   background-image: url(../imagenes/fondo-mat.jpg);
   padding-top: 40px;
@@ -243,19 +246,13 @@ section .carrusel-perfil {
 }
 
 .info {
-  display: flex;
-  gap: 80px;
-  margin-left: 280px;
-  margin-bottom: 30px;
-}
-.info .info__redes {
-  background-color: aliceblue;
-  text-align: center;
-  margin-top: 43px;
-  border-radius: 5px;
+  gap: 200px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .info .mobile-imagen-redes {
-  display: none;
+  width: 45px;
+  height: 45px;
 }
 
 /* postulate */
@@ -449,13 +446,13 @@ section .carrusel-perfil {
   }
   .grilla-perfil-media .info {
     display: flex;
-    margin-left: 90px;
+    padding: 0px;
+    gap: 50px;
+    padding-bottom: 20px;
   }
   .grilla-perfil-media .info .mobile-imagen-redes {
     background-color: aliceblue;
     display: block;
-    margin-top: 20px;
-    margin-left: 10px;
     width: 45px;
     height: 45px;
   }
