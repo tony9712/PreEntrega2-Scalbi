@@ -7,6 +7,10 @@
     background-attachment: fixed;
     text-align: center;
 
+    .mobile__historia{
+        display: none;
+    }
+
     .quienes-titulo{
         background-color: $color-primario;
         @extend %flex-centrado-colum;

@@ -287,6 +287,9 @@ section .carrusel-perfil {
   background-attachment: fixed;
   text-align: center;
 }
+.quienes .mobile__historia {
+  display: none;
+}
 .quienes .quienes-titulo {
   background-color: rgb(116, 178, 191);
 }
