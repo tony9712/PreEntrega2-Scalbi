@@ -390,6 +390,7 @@ section .carrusel-perfil {
   /*postulate*/
   .form {
     max-width: 100vw;
+    text-align: center;
   }
   .postulate-main {
     background-image: url(../imagenes/fondo-mobile-postulate.jpg.png);
@@ -402,6 +403,8 @@ section .carrusel-perfil {
     background-color: aliceblue;
     padding: 0px;
     max-width: 100%;
+    text-align: center;
+    margin-left: 50px;
   }
   /*perfil*/
   .fondo-mobile-perfil {
