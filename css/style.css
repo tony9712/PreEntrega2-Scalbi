@@ -191,6 +191,7 @@ main .carta .card .card-body .carta-boton {
 /* perfil */
 main {
   background-image: url(../imagenes/fondo-mobile-perfil.avif);
+  background-attachment: fixed;
 }
 main .portada {
   background-image: url(../imagenes/fondo-mat.jpg);
@@ -225,24 +226,27 @@ section .carrusel-perfil {
 }
 
 .info__perfil {
-  display: grid;
-  grid-template-columns: 65% 35%;
-}
-.info__perfil p {
-  border-radius: 5px;
+  display: flex;
+  gap: 20%;
 }
 .info__perfil .padre__info__descripcion {
   align-items: center;
+  width: 500px;
+  height: 230px;
+  margin-top: 50px;
 }
 .info__perfil .padre__info__descripcion .info__descripcion {
   background-color: aliceblue;
-  height: 230px;
+  border: 3px solid black;
+  padding: 10px;
+  border-radius: 5px;
 }
 .info__perfil .iframe-perfil-media {
+  border: 3px solid black;
   border-radius: 20px;
   height: 400px;
   width: 600px;
-  padding-left: 200px;
+  margin-left: 10px;
 }
 
 .info {
@@ -251,8 +255,8 @@ section .carrusel-perfil {
   padding-bottom: 50px;
 }
 .info .mobile-imagen-redes {
-  width: 45px;
-  height: 45px;
+  width: 60px;
+  height: 60px;
 }
 
 /* postulate */

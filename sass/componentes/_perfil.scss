@@ -2,6 +2,7 @@
 
 main{
     background-image: url(../imagenes/fondo-mobile-perfil.avif);
+    background-attachment: fixed;
     .portada{
         background-image: url(../imagenes/fondo-mat.jpg);
         @extend %flex-centrado;
@@ -42,28 +43,32 @@ section{
 }
 
 .info__perfil{
-    display: grid;
-    grid-template-columns: 65% 35%;
+    display: flex;
+    gap: 20%;
 
-    p{
-        border-radius: 5px;
-    }
 
     .padre__info__descripcion{
         @extend %flex-centrado;
         align-items: center;
+        width: 500px;
+        height: 230px;
+        margin-top: 50px;
 
         .info__descripcion{
             background-color: $fondo-claro;
-            height: 230px;
+            border: 3px solid black;
+            padding: 10px;
+            border-radius: 5px;
         }
     }
 
     .iframe-perfil-media{
+        border: 3px solid black;
         border-radius: 20px;
         height: 400px;
         width: 600px;
-        padding-left: 200px;
+        margin-left: 10px
+        
     }
 }
 
@@ -74,7 +79,7 @@ section{
     padding-bottom: 50px;
 
     .mobile-imagen-redes{
-        width: 45px;
-        height: 45px;
+        width: 60px;
+        height: 60px;
     }
 }
