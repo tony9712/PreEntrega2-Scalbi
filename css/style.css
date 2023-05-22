@@ -43,6 +43,12 @@ table {
   background-color: "Roboto", sans-serif;
 }
 
+h4 {
+  font-weight: bold;
+  color: black;
+  font-size: 15px;
+}
+
 /* header*/
 header .nav-titulo {
   display: flex;
@@ -165,6 +171,7 @@ main .mate .mate-textos .mate__subtitulo {
 main .carta {
   padding: 20px;
   background-color: rgb(116, 178, 191);
+  min-height: 580px;
 }
 main .carta .card {
   display: flex;
@@ -231,8 +238,8 @@ section .carrusel-perfil {
 }
 .info__perfil .padre__info__descripcion {
   align-items: center;
-  width: 500px;
-  height: 230px;
+  width: 360px;
+  height: 300px;
   margin-top: 50px;
 }
 .info__perfil .padre__info__descripcion .info__descripcion {

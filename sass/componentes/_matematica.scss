@@ -28,10 +28,12 @@ main{
         }
     }
     
+
     .carta{
         @extend %flex-centrado;
         padding: 20px;
         background-color: $color-primario;
+        min-height: 580px;
 
         .card{
             display: flex;
@@ -60,5 +62,5 @@ main{
                 }
             }
         }
-    }   
+    }
 }
