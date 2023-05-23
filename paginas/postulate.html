@@ -66,9 +66,25 @@
     </header>
     <main class="postulate-main">
         <h1 class="titulo-postulate">Sumate a nuestra comunidad!</h1>
-      <div>
+      <div class="postulate-mobile">
         <form class="form">
-          <label for="nombre ">Nombre:</label>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre"  class="name"><br>
+        
+          <label for="email ">Email:</label>
+          <input type="email" id="email" name="email" class="mail"><br>
+        
+          <label for="comentarios">Contanos sobre vos:</label>
+          <textarea id="comentarios" name="comentarios" class="contanos"></textarea><br>
+          <p>¿Tenes algun certificado?</p>
+          <input type="file" class="certificado-postulate">
+  
+          <input type="submit" value="Enviar" class="enviar">
+        </form>
+      </div>
+      <div class="postulate-desktop">
+        <form class="form">
+          <label for="nombre">Nombre:</label>
           <input type="text" id="nombre" name="nombre"><br>
         
           <label for="email ">Email:</label>

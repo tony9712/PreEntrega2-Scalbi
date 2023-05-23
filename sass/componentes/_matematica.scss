@@ -28,6 +28,14 @@ main{
         }
     }
     
+    .carousel-control-next-icon,
+.carousel-control-next-icon::before {
+  background-color: black;
+}
+    .carousel-control-prev-icon,
+.carousel-control-prev-icon::before {
+  background-color: black;
+}
 
     .carta{
         @extend %flex-centrado;

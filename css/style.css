@@ -168,6 +168,14 @@ main .mate .mate-textos .mate__subtitulo {
   text-align: center;
   margin-left: 400px;
 }
+main .carousel-control-next-icon,
+main .carousel-control-next-icon::before {
+  background-color: black;
+}
+main .carousel-control-prev-icon,
+main .carousel-control-prev-icon::before {
+  background-color: black;
+}
 main .carta {
   padding: 20px;
   background-color: rgb(116, 178, 191);
@@ -279,6 +287,9 @@ section .carrusel-perfil {
   width: 600px;
   font-family: "Roboto", sans-serif;
 }
+.postulate-main .postulate-mobile {
+  display: none;
+}
 .postulate-main .form {
   display: flex;
   flex-direction: column;
@@ -286,6 +297,26 @@ section .carrusel-perfil {
 }
 .postulate-main .form .certificado-postulate {
   padding-bottom: 20px;
+}
+.postulate-main .form .name {
+  background-color: orange;
+  width: 200px;
+  align-self: center;
+}
+.postulate-main .form .contanos {
+  background-color: pink;
+  width: 350px;
+  align-self: center;
+}
+.postulate-main .form .mail {
+  background-color: rgb(116, 178, 191);
+  width: 200px;
+  align-self: center;
+}
+.postulate-main .form .enviar {
+  width: 150px;
+  align-self: center;
+  margin-top: 50px;
 }
 
 /* quienes somos*/
@@ -434,6 +465,12 @@ section .carrusel-perfil {
     max-width: 100%;
     text-align: center;
     margin-left: 50px;
+  }
+  .postulate-main .postulate-desktop {
+    display: none;
+  }
+  .postulate-main .postulate-mobile {
+    display: block;
   }
   /*perfil*/
   .fondo-mobile-perfil {

@@ -10,6 +10,9 @@
             width: 600px;
             font-family: 'Roboto', sans-serif;
             }
+        .postulate-mobile{
+            display: none;
+        }
         .form{
             display: flex;
             flex-direction: column;
@@ -17,6 +20,26 @@
     
                 .certificado-postulate{
                 padding-bottom: 20px;
+                }
+                .name{
+                    background-color: orange;
+                    width: 200px;
+                    align-self: center;
+                }
+                .contanos{
+                    background-color: pink;
+                    width: 350px;
+                    align-self: center;
+                }
+                .mail{
+                    background-color: $color-primario;
+                    width: 200px;
+                    align-self: center;
+                }
+                .enviar{
+                    width: 150px;
+                    align-self: center;
+                    margin-top: 50px;
                 }
         }
     }
