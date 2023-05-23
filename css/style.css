@@ -447,6 +447,9 @@ section .carrusel-perfil {
   main .mate .mate-textos .mate__subtitulo {
     display: none;
   }
+  .scroll-mobile {
+    overflow-x: hidden;
+  }
   /*postulate*/
   .form {
     max-width: 100vw;
@@ -483,6 +486,7 @@ section .carrusel-perfil {
   .grilla-perfil-media {
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
   }
   .grilla-perfil-media .fotos {
     display: none;
@@ -500,7 +504,8 @@ section .carrusel-perfil {
     width: 360px;
   }
   .grilla-perfil-media .carrusel-perfil .carousel-item img {
-    max-width: 100vw;
+    min-width: 100vw;
+    min-height: 380px;
   }
   .grilla-perfil-media .info__perfil {
     display: flex;
